@@ -16,11 +16,8 @@ public class ResultadoActivity extends AppCompatActivity {
         ImageView imageResultado = findViewById(R.id.imageResultado);
         Button buttonVoltar = findViewById(R.id.buttonVoltar);
 
-
-
         Bundle  dados  = getIntent().getExtras();
         int numero     = dados.getInt("numero");
-
 
         if ( numero == 0 ){
             imageResultado.setImageResource( R.drawable.moeda_cara);
@@ -28,12 +25,7 @@ public class ResultadoActivity extends AppCompatActivity {
         }else {
             imageResultado.setImageResource(R.drawable.moeda_coroa);
 
-
         } buttonVoltar.setOnClickListener(view -> finish());
-
-
-
-
 
     }
 }
