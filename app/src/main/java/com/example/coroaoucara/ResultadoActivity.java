@@ -26,6 +26,5 @@ public class ResultadoActivity extends AppCompatActivity {
             imageResultado.setImageResource(R.drawable.moeda_coroa);
 
         } buttonVoltar.setOnClickListener(view -> finish());
-
     }
 }
